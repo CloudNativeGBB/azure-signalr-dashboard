@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="container">
+    <div class="row" style="margin:10px;">
+        <div class="col-12">
+            <div class="input-group">
+                <div class="input-group-append">
+                    <button id="authenticate" class="btn btn-primary">Get token</button>
+                    <button id="create-async" class="btn btn-success">Create asynchronous durable task</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="progress" style="margin:10px;">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+    </div>
+    <div class="row" style="margin:10px;">
+        <ul id="output" class="list-unstyled" style="font-family:Consolas">
+        </ul>
+    </div>
+</div>
